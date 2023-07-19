@@ -12,8 +12,14 @@
       <h2>Fill out the contact form!</h2> 
     <p>Reach out if you are interested.</p>
     </div>
-    <form action="https://formsubmit.co/storeprimedomain@gmail.com" method="POST" class="form">
+    <form action="https://formsubmit.co/3675110e80f7953df60cd2ce45dfc0b6" method="POST" class="form">
       
+      <!-- Honeypot-->
+      <input type="text" name="_honey" style="display: none;">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="./thanks.html">
+
       <input type="text" placeholder="name" class="form__input" id="name" name="name"/>
       <label for="name" class="form__label">Name</label>
 
@@ -24,9 +30,7 @@
       <label for="message" class="form__label">Subject</label>
       <button type="submit" id="submit" class="button-30" [disabled]="contactForm.invalid">Submit</button>
 
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="./thanks.html">
+      
 
     </form>
 

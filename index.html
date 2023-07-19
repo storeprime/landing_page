@@ -24,6 +24,10 @@
       <label for="message" class="form__label">Subject</label>
       <button type="submit" id="submit" class="button-30" [disabled]="contactForm.invalid">Submit</button>
 
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="./thanks.html">
+
     </form>
 
   </div>

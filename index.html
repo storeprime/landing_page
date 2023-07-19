@@ -12,7 +12,7 @@
       <h2>Fill out the contact form!</h2> 
     <p>Reach out if you are interested.</p>
     </div>
-    <form action="https://formsubmit.co/3675110e80f7953df60cd2ce45dfc0b6" method="POST" class="form">
+    <form class="form" action="https://formsubmit.co/3675110e80f7953df60cd2ce45dfc0b6" method="POST">
       
       <!-- Honeypot-->
       <input type="text" name="_honey" style="display: none;">
@@ -23,6 +23,8 @@
       <!-- Change email template -->
       <input type="hidden" name="_template" value="table">
 
+      <!-- Redirect to thank you page -->
+      <input type="hidden" name="_next" value="https://storeprime.github.io/landing_page/thanks.html">
     
 
       <input type="text" placeholder="name" class="form__input" id="name" name="name"/>
@@ -33,7 +35,7 @@
 
       <input type="text" placeholder="Message" class="form__input" id="message" name="message"/>
       <label for="message" class="form__label">Subject</label>
-      <button type="submit" id="submit" class="button-30" [disabled]="contactForm.invalid">Submit</button>
+      <button type="submit" id="submit" class="button-30">Submit</button>
 
       
 

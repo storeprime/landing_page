@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>.Store Domain</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>This .Store Domain is for Sale</h1>
+  <div class="container">
+    <div class="cta-form">
+      <h2>Fill out the contact form!</h2> 
+    <p>Reach out if you are interested.</p>
+    </div>
+    <form action="https://formsubmit.co/storeprimedomain@gmail.com" method="POST" class="form">
+      
+      <input type="text" placeholder="name" class="form__input" id="name" name="name"/>
+      <label for="name" class="form__label">Name</label>
+
+      <input type="email" placeholder="Email" class="form__input" id="email" name="email"/>
+      <label for="email" class="form__label">Email</label>
+
+      <input type="text" placeholder="Message" class="form__input" id="message" name="message"/>
+      <label for="message" class="form__label">Subject</label>
+      <button type="submit" id="submit" class="button-30" [disabled]="contactForm.invalid">Submit</button>
+
+    </form>
+
+  </div>
+</body>
+</html>
